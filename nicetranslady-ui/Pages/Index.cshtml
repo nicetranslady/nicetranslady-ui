@@ -1,0 +1,80 @@
+﻿@page
+@model nicetranslady.ui.Pages.IndexModel
+@{
+    ViewData["Title"] = "About nicetranslady and links to her social media accounts";
+}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: transparent">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- Body -->
+<div class="container">
+    <h1>A bit about nicetranslady...</h1>
+    <h2>nicetranslady?</h2>
+    <p>Yes, nicetranslady. This is an alter-ego I kind of started using by accident about a year ago (September 2019) when my life turned upside-down with me in it.</p>
+    <p>This is a collection of those social media, streaming and giving pages. I've also recently started a <a href="https://blog.nicetranslady.online" rel="noopener" target="_blank">blog</a> on Blogger (Blogspot). Hopefully, it will be a useful guide to the humour and trauma we experience as trans people.</p>
+    <h2>What does she do?</h2>
+    <p>I live in the northwest of England, and I've been an IT Professional for about 20 years.</p>
+    <p>I have been involved in service desks, client services, project and programme management, transition of very large European-wide service desk organisations, building an airport, designing and implementing data centre networks and virtualisation, service management of network services in the pharma and FMCG sectors, roll-outs of Windows XP and 7 in addition to supporting branch based back-office and most latterly as a network architect for a global company. I set out in life to be a software engineer, but entering the workforce around the millennium bug era, everyone was already a software engineer so I diversified into server and network support.</p>
+    <h2>Trans? Transgender?</h2>
+    <p>Yup. I'm transgender and it sucks. I just can't love it the way that some trans folks do. I've tried to muddle along ignoring it for most of my life, but it got the better of me and almost ended up killing me. Since I've been out, life has been much harder, but living as me has been so much easier. Have you ever tried writing with the wrong hand (if you're ambidextrous, try with your mouth)? That's what it feels like. Doing stuff against what your body wants to do and finds natural is <em>tiring</em>.</p>
+    <h2>Anything Else?</h2>
+    <p>My name isn't a secret, it's Holly Lancaster-Smith (Twitter @@HollyLS77). My name doesn't fit most gamer-tags, and for my handle, lots have already been registered to a load of other Holly LS type people - I just wanted to tie all my non-personal stuff up together. So I did.</p>
+    <p>Since going to the doctor to be referred to a gender clinic, I've also started taking more of an interest in me. I've never lived for tomorrow so haven't put much thought into it before. Anyway, it turns out that I'm also on the autism spectrum (high-functioning ASD, apparently). That explains a lot of behaviour that people had to put up with from me for a loooong time. Sorry to those people. Labels have been good for me. I just wish that I could have been labelled as a 5 year old, when I realised that I should be in the other queue, allowed to play house and not funnelled into "boys" stuff and activities. Also, being told off and/ or punished for behaving in a certain manner that you really can't help is shit and makes for a long and unhappy school experience.</p>
+    <h2>Hobbies?</h2>
+    <p>Computers. Technical stuff, building stuff, fixing stuff. I like (video) gaming, though I'm not particularly good - it whiles away some hours. Coding, this web app is a C# version of a PHP version I created. You should be able to find at least 1 app on here that's completely JavaScript too. I'll add my GitHub link on here at some point.</p>
+    <p>I spend quite a lot of time watching films (or movies, if you prefer). Up until lockdown in March, I think I watched every single release that my local cinema showed from January. Plus a couple of National Theatre broadcasts. If I have time, I'll be watching a flick. I like some boxsets, but I prefer a film. I can usually find a redeeming feature in all but the most terrible efforts, I appreciate the work that has gone into producing the whole thing rather than just the story or the cast.</p>
+    <p>I love cooking, I'm by no means a chef but I'm all-in for tinkering with textures and flavours. Although I can make some nice bread, I'm just not a baker. Baking is chemistry, I'm more of a physicist. Haha.</p>
+    <p>I've also started with the protesting and advocacy for trans rights, though I find it very hard work and sometimes pretty degrading - there are some horrible individuals in this world of ours. Other than that, watching a bit of footy, cricket and occasionally playing golf (badly) max out my down-time.</p>
+    <!-- h2>Giving Pages?</h2>
+    <p>Yes, giving pages. I know we're all at it, but a lot of medical stuff we need isn't covered by the NHS. Facial surgery, hair removal, etc. is probably a lot more expensive than you thought. My plan is to list all my patrons that donate on these pages, if they want to. Please consider setting up a recurring or one off donation on Patreon, OnlyFans or Paypal. Links to all below. Thank You. In return, I'll start uploading my progress, all-access, and any recipes that I come up with.</p -->
+</div>
+
+<!-- This needs to move to a component or partial-->
+<!-- Icons footer -->
+
+@{
+    var SocialMediaCompanies = new List<SocialMediaCompany>
+{
+    new SocialMediaCompany {Name = "Twitch", HomeURL = "https://www.twitch.tv/nicetranslady", Prefix = "twitch" },
+    new SocialMediaCompany {Name = "Discord", HomeURL = "https://discord.gg/6XgZYdv", Prefix = "discord" },
+    new SocialMediaCompany {Name = "Twitter", HomeURL = "https://twitter.com/nicetranslady", Prefix = "twitter" },
+    new SocialMediaCompany {Name = "Instagram", HomeURL = "https://instagram.com/nicetranslady", Prefix = "instagram" },
+    new SocialMediaCompany {Name = "Facebook", HomeURL = "https://facebook.com/nicetranslady", Prefix = "facebook" },
+    new SocialMediaCompany {Name = "Steam", HomeURL = "https://steamcommunity.com/profiles/76561199034457152", Prefix = "steam" },
+    new SocialMediaCompany {Name = "YouTube", HomeURL = "https://www.youtube.com/channel/UCt1TRJ8INljw-8ouamS0fwg", Prefix = "youtube" },
+    new SocialMediaCompany {Name = "Patreon", HomeURL = "https://www.patreon.com/nicetranslady", Prefix = "patreon" },
+    new SocialMediaCompany {Name = "Blogger", HomeURL = "https://blog.nicetranslady.online", Prefix = "blogger" },
+    new SocialMediaCompany {Name = "Amazon", HomeURL = "https://www.amazon.co.uk/hz/wishlist/ls/21B3NNZDQ9TK2?ref_=wl_share", Prefix = "amazon" },
+    new SocialMediaCompany {Name = "OnlyFans", HomeURL = "https://onlyfans.com/nicetranslady", Prefix = "onlyfans" },
+    new SocialMediaCompany {Name = "PayPal", HomeURL = "https://paypal.me/nicetranslady", Prefix = "paypal" },
+    new SocialMediaCompany {Name = "CuriousCat", HomeURL = "https://curiouscat.me/nicetranslady", Prefix = "curiouscat" },
+    new SocialMediaCompany {Name = "GitHub", HomeURL = "https://github.com/nicetranslady", Prefix = "github" }
+    };
+}
+
+<div class="container" style="text-align: center">
+    <div class="socialMedia-icons">
+        @foreach (var SocialMediaCompany in SocialMediaCompanies)
+        {
+            <div>
+                <button onclick="window.open('@SocialMediaCompany.HomeURL', '_blank')">
+                    <img class="button-icon"
+                         src="/images/social_media/160_160/@(SocialMediaCompany.Prefix)_black.png"
+                         alt="@SocialMediaCompany.Name"
+                         onMouseOver="this.src='/images/social_media/160_160/@(SocialMediaCompany.Prefix)_white.png';"
+                         onMouseOut="this.src='/images/social_media/160_160/@(SocialMediaCompany.Prefix)_black.png';"
+                         onclick="getOutboundLink('@SocialMediaCompany.HomeURL'); return false;" />
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+<siv>&nbsp;</siv>

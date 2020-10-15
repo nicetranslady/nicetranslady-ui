@@ -1,0 +1,266 @@
+﻿a {
+    text-decoration: none;
+    color: darkcyan;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+    a:link {
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: darkcyan;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+body {
+    margin: 0;
+    background: rgb(255,165,192);
+    background-image: url('/images/site/progress_flag_background_63_100.png');
+    background-repeat: repeat-x;
+}
+
+button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+}
+
+    button:hover {
+        text-decoration: none;
+        background: none;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 100px;
+    }
+
+    button:active {
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.button-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.socialMedia-icons {
+    display: inline-grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 25px;
+    padding: 0px;
+    width: 225px;
+}
+
+.header-img {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 75px;
+    height: 100px;
+    background-image: url("/images/site/progress_flag_corner_75_100.png");
+}
+
+.header-placeholder {
+    height: 100px;
+}
+
+.header-text {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    right: 5px;
+    width: 130px;
+    height: 100px;
+    background-image: url(/images/site/progress_flag_text_130_100.png);
+}
+
+@media only screen and (min-width: 350px) {
+    .button-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .socialMedia-icons {
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .button-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .socialMedia-icons {
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("/images/site/progress_flag_background_333_200.png");
+    }
+
+    button {
+        height: 40px;
+    }
+
+        button:hover {
+            height: 40px;
+        }
+
+    .button-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialMedia-icons {
+        grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-rows: 40px;
+        grid-gap: 10px;
+        height: 40px;
+        width: 690px;
+    }
+
+    .header-img {
+        width: 150px;
+        height: 200px;
+        background-image: url("/images/site/progress_flag_corner_150_200.png");
+    }
+
+    .header-placeholder {
+        height: 200px;
+    }
+
+    .header-text {
+        width: 333px;
+        height: 200px;
+        background-image: url(/images/site/progress_flag_text_333_200.png);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url("/images/site/progress_flag_background_333_200.png");
+    }
+
+    button {
+        height: 40px;
+    }
+
+        button:hover {
+            height: 40px;
+        }
+
+    .button-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialMedia-icons {
+        grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-rows: 40px;
+        grid-gap: 10px;
+        height: 40px;
+        width: 690px;
+    }
+
+    .header-img {
+        width: 150px;
+        height: 200px;
+        background-image: url("/images/site/progress_flag_corner_150_200.png");
+    }
+
+    .header-placeholder {
+        height: 200px;
+    }
+
+    .header-text {
+        width: 333px;
+        height: 200px;
+        background-image: url("/images/site/progress_flag_text_333_200.png");
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-image: url("/images/site/progress_flag_background_333_200.png");
+    }
+
+    button {
+        height: 40px;
+    }
+
+        button:hover {
+            height: 40px;
+        }
+
+    .button-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialMedia-icons {
+        grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-rows: 40px;
+        grid-gap: 10px;
+        height: 40px;
+        width: 690px;
+    }
+
+    .header-img {
+        width: 150px;
+        height: 200px;
+        background-image: url("/images/site/progress_flag_corner_150_200.png");
+    }
+
+    .header-placeholder {
+        height: 200px;
+    }
+
+    .header-text {
+        width: 333px;
+        height: 200px;
+        background-image: url("/images/site/progress_flag_text_333_200.png");
+    }
+}

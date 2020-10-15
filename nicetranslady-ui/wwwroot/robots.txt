@@ -1,0 +1,9 @@
+# Group 1
+User-agent: *
+Disallow: /old/
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://nicetranslady.online/sitemap.xml
