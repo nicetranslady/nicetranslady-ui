@@ -59,6 +59,51 @@
     <!-- link rel="mask-icon" href="your_icon.svg" -->
 </head>
 <body>
+    <!-- All of this should be in a Google BODY-TOP file -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW667S3"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176693214-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176693214-1');</script>
+
+    <!-- Load `web-vitals` using a module script. -->
+    <script type="module">import { getCLS, getFID, getLCP } from 'https://unpkg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';
+
+        getCLS(console.log);
+        getFID(console.log);
+        getLCP(console.log);</script>
+
+    <!-- Google Optimize Snippet -->
+    <script async src="https://www.googleoptimize.com/optimize.js?id=OPT-5VMLW66"></script>
+
+    <script>/**
+        * Function that registers a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var getOutboundLink = function (url) {
+            gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': url,
+                'transport_type': 'beacon',
+                //'event_callback': function(){document.location = url;} - Commented out as we do not want the event to update the current page
+            });
+        }</script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-8497649303349192" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- END OF GOOGLE BODY-TP -->
+
+
     <!-- Header -->
     <header>
         <!-- Banner -->
@@ -81,7 +126,7 @@
     <footer class="border-top text-muted">
         <div class="container">
             <div style="text-align: center">
-                &copy;&nbsp;2020&nbsp;-&nbsp;nicetranslady<!-- | <a asp-area="" asp-page="/Privacy">Privacy</a> --> 
+                &copy;&nbsp;2020&nbsp;-&nbsp;nicetranslady<!-- | <a asp-area="" asp-page="/Privacy">Privacy</a> -->
             </div>
         </div>
     </footer>
