@@ -3,11 +3,24 @@
 @{
 }
 
+<!-- Breadcrumb -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: transparent">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">MedBay</li>
+        </ol>
+    </nav>
+</div>
+
+
 <!-- App Container -->
 <div class="container">
+    <h1>MedBay</h1>
+    <h2>A formatting tool for Patient Access JSON files</h2>
     <div id="nav" hidden>
         <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist" style="background-color: lightgray">
                 <a class="nav-link active" id="nav-file-tab" data-toggle="tab" href="#nav-file" role="tab" aria-controls="nav-file" aria-selected="true">
                     File Details
                 </a>
@@ -32,33 +45,40 @@
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-file" role="tabpanel" aria-labelledby="nav-file-tab">
+            <div class="tab-pane fade show active" id="nav-file" role="tabpanel" aria-labelledby="nav-file-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-problems" role="tabpanel" aria-labelledby="nav-problems-tab">
+            <div class="tab-pane fade" id="nav-problems" role="tabpanel" aria-labelledby="nav-problems-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-medications" role="tabpanel" aria-labelledby="nav-medications-tab">
+            <div class="tab-pane fade" id="nav-medications" role="tabpanel" aria-labelledby="nav-medications-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-testResults" role="tabpanel" aria-labelledby="nav-testResults-tab">
+            <div class="tab-pane fade" id="nav-testResults" role="tabpanel" aria-labelledby="nav-testResults-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-consultations" role="tabpanel" aria-labelledby="nav-consultations-tab">
+            <div class="tab-pane fade" id="nav-consultations" role="tabpanel" aria-labelledby="nav-consultations-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-immunisations" role="tabpanel" aria-labelledby="nav-immunisations-tab">
+            <div class="tab-pane fade" id="nav-immunisations" role="tabpanel" aria-labelledby="nav-immunisations-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4&nbsp;&nbsp;>No Data</h4&nbsp;&nbsp;>
+                <p>&nbsp;</p>
             </div>
-            <div class="tab-pane fade" id="nav-allergies" role="tabpanel" aria-labelledby="nav-allergies-tab">
+            <div class="tab-pane fade" id="nav-allergies" role="tabpanel" aria-labelledby="nav-allergies-tab" style="background-color: lightpink">
                 <p>&nbsp;</p>
-                <h4>No Data</h4>
+                <h4>&nbsp;&nbsp;No Data</h4>
+                <p>&nbsp;</p>
             </div>
         </div>
     </div>
@@ -67,10 +87,12 @@
 <div class="container" id="getFileBox">
     <div class="row">
         <div>
-            <p>To open a file, click the Choose File button below. Choose a JSON file that has been exported from Patient Access.</p>
-            <p>No data is transmitted in any way. All processing takes place within this browser. This page has been delivered securely, as you can tell from the padlock symbol in your browser. No data will leave your computer, no internet servers are utilised to process the data.</p>
-            <p>Source code for this page app can be found and viewed on GitHub (nicetranslady/MedBay), for further verification if required.</p>
-            <div id="getFile"></div>
+            <p>This tool will allow you to open an export file from Patient Access, in the JSON format.</p>
+            <p>In Patient Access, choose export data ans then select JSON file.</p>
+            <p>To open a file to format, click the Choose File button below. Choose a JSON file that has been exported from Patient Access.</p>
+            <div id="getFile" style="height: 66px; text-align: center"></div>
+            <p>This tool completes all of its processing within this browser using JavaScript. No data is transmitted by this app. Tho ensure this app has been delivered securely, check for the padlock symbol in your browser.</p>
+            <p>Source code for this page app can be found and viewed on GitHub (nicetranslady/nicetranslady-ui), for further verification if required.</p>
         </div>
     </div>
 </div>

@@ -84,7 +84,7 @@ function writeFileDetails(file) {
     }
 
     // Write code
-    fileCode = '<p>&nbsp;</p>';
+    fileCode = '<div style="height:10px"></div>';
     fileCode += '<p>File Name: ' + filename + '</p>';
     fileCode += '<p>File Size: ' + filesize + '</p>';
     fileCode += '<p>Source: ' + source + '</p>';
@@ -103,7 +103,7 @@ function writeProblems(problems) {
     var
         i = 0,
         problemsCode = "",
-        problemTypeCode = "<p>&nbsp;</p>";
+        problemTypeCode = '<div style="height:10px"></div>';
 
     // Enable Problems tab in nav and details
     document.getElementById("nav-problems-tab").innerHTML = 'Problems <span class="badge badge-primary">0</span>';
@@ -142,7 +142,7 @@ function writeMedications(medications) {
     var
         i = 0,
         medicationsCode = "",
-        medicationTypeCode = "<p>&nbsp;</p>";
+        medicationTypeCode = '<div style="height:10px"></div>';
 
     // Enable Medications tab in nav and details
     document.getElementById("nav-medications-tab").innerHTML = 'Medications <span class="badge badge-primary">0</span>';
@@ -183,7 +183,7 @@ function writeTestResults(testResults) {
         captionID = "",
         created = "",
         i = 0,
-        testResultsCode = "<p>&nbsp;</p>",
+        testResultsCode = '<div style="height:10px"></div>',
         testResultLine = { "total": 0, "warning": 0, "danger": 0, "code": "" },
         title = "";
 
@@ -237,7 +237,7 @@ function writeConsultations(consultations) {
     // Enable Consultations tab in nav and details and emty the nav content
     document.getElementById("nav-consultations-tab").innerHTML = 'Consultations <span class="badge badge-primary">0</span>';
     document.getElementById("nav-consultations").hidden = false;
-    document.getElementById("nav-consultations").innerHTML = "<p>&nbsp;</p>";
+    document.getElementById("nav-consultations").innerHTML = '<div style="height:10px"></div>';
 
     // Review Consultations
     for (i in consultations) {
@@ -270,7 +270,7 @@ function writeImmunisations(immunisations) {
     // Initialise Variables
     var
         i = 0,
-        immunisationsCode = "<p>&nbsp;</p>",
+        immunisationsCode = '<div style="height:10px"></div>',
         immunisationDate = "",
         immunisationDescription = "";
 
@@ -491,5 +491,6 @@ function setup() {
     // Create a file input box
     fileInput = createFileInput(fileSelected);
     fileInput.parent('getFile');
-    fileInput.center();
+    // fileInput.center();
+    fileInput.style('position: relative; top: 10px');
 }
