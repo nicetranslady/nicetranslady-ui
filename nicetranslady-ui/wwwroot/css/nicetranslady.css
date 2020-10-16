@@ -71,6 +71,17 @@ p {
     font-weight: normal;
 }
 
+.btn {
+    border: 1px;
+    padding: 6px;
+    padding-right: 12px;
+}
+    .btn:hover {
+        border: 1px;
+        padding: 6px;
+        padding-right: 12px;
+    }
+
 .button-icon {
     width: 100px;
     height: 100px;

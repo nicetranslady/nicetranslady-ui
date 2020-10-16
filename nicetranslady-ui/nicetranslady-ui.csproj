@@ -8,11 +8,12 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'nicetranslady_ui' " />
   <ItemGroup>
     <Folder Include="Pages\" />
+    <Folder Include="Pages\MedBay\" />
     <Folder Include="Pages\Shared\" />
     <Folder Include="Data\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="Pages\MedBay\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 </Project>
