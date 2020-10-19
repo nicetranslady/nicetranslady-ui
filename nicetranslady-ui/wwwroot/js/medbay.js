@@ -124,7 +124,7 @@ function writeProblems(problems) {
     problemsCode = parseProblems(problems.Past);
     // Create Past type
     i = Number(problems.Past.length) - 1
-    problemTypeCode += '<div><button class="btn btn-light" type="button" data-toggle="collapse" data-target="#past" aria-expanded="false" aria-controls="past" id="repeatButton">Past <span class="badge badge-primary">' + (Number(i) + 1) + '</span></button></div>';
+    problemTypeCode += '<div"><button class="btn btn-light" type="button" data-toggle="collapse" data-target="#past" aria-expanded="false" aria-controls="past" id="repeatButton">Past <span class="badge badge-primary">' + (Number(i) + 1) + '</span></button></div>';
     problemTypeCode += '<div class="collapse" id="past"><div class="card card-body">';
     problemTypeCode += problemsCode;
     problemTypeCode += '</div></div>';
@@ -287,7 +287,7 @@ function writeImmunisations(immunisations) {
         // Write code
         immunisationsCode += '<div class="card card-body text-black bg-light">';
         immunisationsCode += "<strong>" + immunisationDescription + "</strong> ";
-        immunisationsCode += "Immunisatio Date: " + immunisationDate;
+        immunisationsCode += "Immunisation Date: " + immunisationDate;
         immunisationsCode += '</div>';
     }
 
