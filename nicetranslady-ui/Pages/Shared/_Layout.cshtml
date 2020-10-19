@@ -56,11 +56,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon_apple_180.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="228x228" href="/images/favicon/favicon_apple_228.png" type="image/png" />
     <!-- link rel="mask-icon" href="your_icon.svg" -->
-
-    <!-- Load required js -->
-    <script type="text/javascript" src="/js/medbay.js"></script>
-    <!-- p5js -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <!-- MedBay -->
+    {@if (ViewBag.Title.StartsWith("nicetranslady | MedBay"))
+    {
+        <!-- Load required js -->
+        <script type="text/javascript" src="/js/medbay.js"></script>
+        <!-- p5js -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+        }
+    }
+    <!-- END OF MedBay -->
 
 </head>
 <body>
