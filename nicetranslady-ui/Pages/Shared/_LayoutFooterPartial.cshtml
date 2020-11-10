@@ -1,0 +1,49 @@
+﻿@* Icons *@
+@{
+    var SocialMediaCompanies = new List<SocialMediaCompany>
+    {
+        new SocialMediaCompany {Name = "Twitch", HomeURL = "https://www.twitch.tv/nicetranslady", Prefix = "twitch" },
+        new SocialMediaCompany {Name = "Discord", HomeURL = "https://discord.gg/6XgZYdv", Prefix = "discord" },
+        new SocialMediaCompany {Name = "Twitter", HomeURL = "https://twitter.com/nicetranslady", Prefix = "twitter" },
+        new SocialMediaCompany {Name = "Instagram", HomeURL = "https://instagram.com/nicetranslady", Prefix = "instagram" },
+        new SocialMediaCompany {Name = "Facebook", HomeURL = "https://facebook.com/nicetranslady", Prefix = "facebook" },
+        new SocialMediaCompany {Name = "Steam", HomeURL = "https://steamcommunity.com/profiles/76561199034457152", Prefix = "steam" },
+        new SocialMediaCompany {Name = "YouTube", HomeURL = "https://www.youtube.com/channel/UCt1TRJ8INljw-8ouamS0fwg", Prefix = "youtube" },
+        new SocialMediaCompany {Name = "Patreon", HomeURL = "https://www.patreon.com/nicetranslady", Prefix = "patreon" },
+        new SocialMediaCompany {Name = "Blogger", HomeURL = "https://blog.nicetranslady.online", Prefix = "blogger" },
+        new SocialMediaCompany {Name = "Amazon", HomeURL = "https://www.amazon.co.uk/hz/wishlist/ls/21B3NNZDQ9TK2?ref_=wl_share", Prefix = "amazon" },
+        new SocialMediaCompany {Name = "OnlyFans", HomeURL = "https://onlyfans.com/nicetranslady", Prefix = "onlyfans" },
+        new SocialMediaCompany {Name = "PayPal", HomeURL = "https://paypal.me/nicetranslady", Prefix = "paypal" },
+        new SocialMediaCompany {Name = "CuriousCat", HomeURL = "https://curiouscat.me/nicetranslady", Prefix = "curiouscat" },
+        new SocialMediaCompany {Name = "GitHub", HomeURL = "https://github.com/nicetranslady", Prefix = "github" }
+    };
+}
+
+<div class="container" style="text-align: center">
+    <div class="socialMedia-icons">
+        @foreach (var SocialMediaCompany in SocialMediaCompanies)
+        {
+            <div>
+                <button onclick="window.open('@SocialMediaCompany.HomeURL', '_blank')">
+                    <img class="button-icon"
+                         src="/images/social_media/160_160/@(SocialMediaCompany.Prefix)_black.png"
+                         alt="@SocialMediaCompany.Name"
+                         onMouseOver="this.src='/images/social_media/160_160/@(SocialMediaCompany.Prefix)_white.png';"
+                         onMouseOut="this.src='/images/social_media/160_160/@(SocialMediaCompany.Prefix)_black.png';"
+                         onclick="getOutboundLink('@SocialMediaCompany.HomeURL'); return false;" />
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+<div>&nbsp;</div>
+
+<!-- Copyright and Privacy -->
+<div class="border-top text-muted">
+    <div class="container">
+        <div style="text-align: center">
+            &copy;&nbsp;@System.DateTime.Now.Year&nbsp;-&nbsp;nicetranslady<!-- | <a asp-area="" asp-page="/Privacy">Privacy</a> -->
+        </div>
+    </div>
+</div>

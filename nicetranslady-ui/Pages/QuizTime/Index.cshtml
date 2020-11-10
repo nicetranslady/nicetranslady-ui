@@ -1,0 +1,135 @@
+﻿@page
+@model nicetranslady.ui.Pages.QuizTime.IndexModel
+@{
+    ViewData["Title"] = "nicetranslady | QuizTime - Family number quiz game";
+}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: transparent">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quiztime</li>
+        </ol>
+    </nav>
+</div>
+
+
+<!-- App Container -->
+<div class="container">
+    <h1>QuizTime</h1>
+    <h2>COVID QUIZ 10/11/2020</h2>
+    <div class="container">
+        <!-- Write the question number and question -->
+        <div id="questionLabel">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="question">Question</span>
+                </div>
+                <input type="text" class="form-control" aria-label="questionNumber" id="questionNumber" aria-describedby="question" value="0" />
+            </div>
+        </div>
+        <div id="questionText">&nbsp;</div>
+        <div>&nbsp;</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Write the teams -->
+                <!-- Group 1 -->
+                <!-- Team 1 -->
+                <h4 id="group1">&nbsp;</h4>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group1team1">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group1team1answer" id="group1team1answer" aria-describedby="group1team1" />
+                </div>
+                <!-- Team 2 -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group1team2">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group1team2answer" id="group1team2answer" aria-describedby="group1team2" />
+                </div>
+                <!-- Group 2 -->
+                <!-- Team 1 -->
+                <h4 id="group2">&nbsp;</h4>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group2team1">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group2team1answer" id="group2team1answer" aria-describedby="group2team1" />
+                </div>
+                <!-- Team 2 -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group2team2">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group2team2answer" id="group2team2answer" aria-describedby="group2team2" />
+                </div>
+                <!-- Group 3 -->
+                <!-- Team 1 -->
+                <h4 id="group3">&nbsp;</h4>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group3team1">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group3team1answer" id="group3team1answer" aria-describedby="group3team1" />
+                </div>
+                <!-- Team 2 -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="group3team2">&nbsp;</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="group3team2answer" id="group3team2answer" aria-describedby="group3team2" />
+                </div>
+            </div>
+            <!-- Answers -->
+            <div class="col-sm-6">
+                <h4>Answers</h4>
+                <div>
+                    <h4 id="group1AnswerLabel">&nbsp;</h4>
+                    <input id="group1Answer" value="" />
+                </div>
+                <div>
+                    <h4 id="group2AnswerLabel">&nbsp;</h4>
+                    <input id="group2Answer" value="" />
+                </div>
+                <div>
+                    <h4 id="group3AnswerLabel">&nbsp;</h4>
+                    <input id="group3Answer" value="" />
+                </div>
+                <div>&nbsp;</div>
+                <h4>The Answer</h4>
+                <div id="answerText" hidden>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div id="answerDescription" hidden>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="button" id="back" onclick="changeQuestion(0)">Back</button>
+        <button type="button" id="next" onclick="changeQuestion(1)">Forward</button>
+        <button type="button" id="team" onclick="showTeamNames()">Teams</button>
+        <button type="button" id="averages" onclick="calculateAverages()">Averages</button>
+        <button type="button" id="answer" onclick="displayAnswer()" disabled>Answer</button>
+    </div>
+    <div class="jumbotron" id="teams" hidden>
+        <div>
+            Group 1 <input id="newGroup1Name" value="Group 1" />
+            Team 1 <input id="newGroup1Team1Name" value="Team 1" />
+            Team 2 <input id="newGroup1Team2Name" value="Team 2" />
+        </div>
+        <div>
+            Group 2 <input id="newGroup2Name" value="Group 2" />
+            Team 1 <input id="newGroup2Team1Name" value="Team 1" />
+            Team 2 <input id="newGroup2Team2Name" value="Team 2" />
+        </div>
+        <div>
+            Group 3 <input id="newGroup3Name" value="Group 3" />
+            Team 1 <input id="newGroup3Team1Name" value="Team 1" />
+            Team 2 <input id="newGroup3Team2Name" value="Team 2" />
+        </div>
+        <button type="button" id="apply" onclick="applyTeamNames()">Apply</button>
+    </div>
+</div>
+<p>&nbsp;</p>
